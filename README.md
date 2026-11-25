@@ -17,7 +17,7 @@ Writes two lines (228 characters) to `/output/entry.txt`.
 ## The entry
 
 > An elevator is a little room that walks up and down a building without any legs, carrying you along inside it.
-> It maps the closed box and the up-and-down trip, but leaves out the hidden cables and motor that do the real walking.
+> It maps the closed box and the up-and-down trip, but leaves out the hidden cables and motor that really do the lifting.
 
 ---
 

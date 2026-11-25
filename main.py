@@ -14,7 +14,7 @@ LINE_ONE = (
 )
 LINE_TWO = (
     "It maps the closed box and the up-and-down trip, but leaves out "
-    "the hidden cables and motor that do the real walking."
+    "the hidden cables and motor that really do the lifting."
 )
 
 
@@ -24,6 +24,9 @@ def build_text() -> str:
         raise ValueError(f"entry text is {len(text)} characters, must be 1-400")
     if text != text.strip():
         raise ValueError("entry text has leading or trailing whitespace")
+    lines = text.split("\n")
+    if len(lines) != 2 or any(not line.strip() for line in lines):
+        raise ValueError("entry text must be exactly two non-empty lines")
     return text
 
 
